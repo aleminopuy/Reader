@@ -18,13 +18,7 @@ somewhere other than your inbox. It works on Android, Mac and a Boox e-reader.
 
 ## 1. Run it
 
-You need a web address to open it from. The free option is **GitHub Pages**:
-
-1. On GitHub, go to this repo's **Settings → Pages**, and under *Build and deployment* choose **Source: GitHub Actions**.
-2. Merge to `main`. The included workflow publishes the app to
-   `https://aleminopuy.github.io/Reader/`.
-
-GitHub Pages needs either a **public** repo or a paid GitHub plan. The app has no secrets in it, so public is fine. If you'd rather keep the repo private, [Cloudflare Pages](https://pages.cloudflare.com) and [Netlify](https://netlify.com) are also free and work with private repos. Point them at this repo with no build command.
+The app is published automatically to **https://aleminopuy.github.io/Reader/**. Every push to `main` runs `.github/workflows/pages.yml`, which copies the app files to the `gh-pages` branch, and GitHub Pages serves that branch. No repo settings are needed (the repo just has to be public, or on a paid GitHub plan).
 
 **Running locally** (for tweaking): `npx serve -l 8000 .` or `python3 -m http.server 8000`, then open http://localhost:8000.
 
