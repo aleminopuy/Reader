@@ -3,7 +3,7 @@
 export const CONFIG = {
   // Paste your Google OAuth "Web application" client ID here so every device
   // picks it up automatically. See README.md → "Set up Gmail access".
-  clientId: '',
+  clientId: '313863750004-e60u78kgfugo1md9i1gs5fq53t1kobn1.apps.googleusercontent.com',
 
   // Used when a feed's website doesn't allow direct browser fetches (CORS).
   // The feed URL is appended, URL-encoded. Swap in your own Cloudflare worker
