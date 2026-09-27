@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Letterbox</title>
+  <meta name="description" content="A calm reader for your newsletters and RSS feeds.">
+  <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1b1a18" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button id="menuBtn" class="icon-btn menu-btn" aria-label="Menu"></button>
+    <h1 id="title">Letterbox</h1>
+    <span id="status" class="status"></span>
+    <button id="syncBtn" class="icon-btn" aria-label="Refresh" title="Refresh (r)"></button>
+    <a id="settingsBtn" class="icon-btn" href="#/settings" aria-label="Settings"></a>
+  </header>
+  <div class="layout">
+    <nav id="sidebar" aria-label="Publications"></nav>
+    <div id="scrim"></div>
+    <main id="main"></main>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
